@@ -2,6 +2,9 @@ const path = require("path");
 
 module.exports = {
   entry: { main: "./src/index.js" },
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   module: {
     rules: [
       {
