@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "./components/Image.jsx";
 import Button from "./components/Button.jsx";
 import Footer from "./components/Footer.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import preloader from "./../images/preloader.gif";
 import api_key from "./api.json";
 
@@ -33,6 +34,7 @@ const App = (props) => {
 
   return (
     <div className="main-container">
+      <PrivacyPolicy />
       {isLoading ? (
         <img src={preloader} className="preloader" />
       ) : Object.keys(cat).length > 0 ? (
