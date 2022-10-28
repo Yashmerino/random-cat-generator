@@ -21,7 +21,7 @@ const App = (props) => {
 
     const data = await response.json();
 
-    while (data[0].width >= 700 || data[0].height >= 600) {
+    while (data[0].width >= 700 || data[0].height >= 500) {
       data[0].width /= 1.2;
       data[0].height /= 1.2;
     }
