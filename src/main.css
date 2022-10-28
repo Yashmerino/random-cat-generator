@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
 
+  font-family: 'Roboto', sans-serif;
+
   background-color: #e3e3e3;
 }
 
@@ -18,7 +20,7 @@ body {
 
 .image-container {
   width: 100%;
-  height: 600px;
+  height: 500px;
 
   display: flex;
   align-items: center;
@@ -30,12 +32,14 @@ body {
   position: fixed;
 
   width: 100%;
-  height: 20%;
+  height: 25%;
   left: 0;
   bottom: 0;
 }
 
 .button {
+  font-weight: 700px;
+
   width: 60%;
   height: 30%;
 
@@ -111,16 +115,19 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 10%;
+  height: 15%;
 
   background-color: #233142;
   color: white;
   text-align: center;
 }
 
+
 .no_cats {
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
+
+  font-weight: bold;
 }
 
 .preloader {
@@ -129,4 +136,8 @@ body {
 
   margin: 0 auto;
   margin-top: 5%;
+}
+
+a {
+  color: hotpink;
 }
