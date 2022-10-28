@@ -1,6 +1,13 @@
 import React from "react";
 
 const Footer = (props) => {
+  const onPrivacyPolicyClick = (e) => {
+    e.preventDefault();
+    
+    let privacyPolicy = document.getElementById("privacy-policy");
+    privacyPolicy.classList.add("open-privacy-policy");
+  };
+
   return (
     <footer className="footer">
       <p className="footer-text">
@@ -10,13 +17,18 @@ const Footer = (props) => {
       </p>
       <p className="footer-text">
         If you found a bug let us know by creating an issue in{" "}
-        <a target="_blank" href="https://github.com/Yashmerino/random-cat-generator">
+        <a
+          target="_blank"
+          href="https://github.com/Yashmerino/random-cat-generator"
+        >
           Git project
         </a>
         .
       </p>
       <p className="footer-text">
-        <a target="_blank" href="">Privacy Policy</a>
+        <a target="_blank" href="#" onClick={(e) => onPrivacyPolicyClick(e)}>
+          Privacy Policy
+        </a>
       </p>
     </footer>
   );

@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   background-color: #e3e3e3;
 }
@@ -16,6 +16,8 @@ body {
 
 .image {
   margin: 0 auto;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .image-container {
@@ -38,6 +40,8 @@ body {
 }
 
 .button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
   font-weight: 700px;
 
   width: 60%;
@@ -122,7 +126,6 @@ body {
   text-align: center;
 }
 
-
 .no_cats {
   text-align: center;
   margin-top: 15%;
@@ -140,4 +143,45 @@ body {
 
 a {
   color: hotpink;
+}
+
+.privacy-policy {
+  width: 400px;
+  background: #233142;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #fff;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.privacy-policy h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 30px 0 10px;
+}
+
+.privacy-policy button {
+  width: 100%;
+  margin-top: 5%;
+  padding: 10px 0;
+  background-color: #455d7a;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-privacy-policy {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
 }
